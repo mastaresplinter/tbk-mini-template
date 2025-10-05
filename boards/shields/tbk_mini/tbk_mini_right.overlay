@@ -17,7 +17,6 @@
 
         diode-direction = "row2col";
 
-         /* Outputs: rows → no pulls */
          row-gpios
              = <&pro_micro 15 GPIO_ACTIVE_HIGH>
              , <&pro_micro 14 GPIO_ACTIVE_HIGH>
@@ -25,7 +24,6 @@
              , <&pro_micro 10 GPIO_ACTIVE_HIGH>
              ;
 
-         /* Inputs: columns → pull-up + active-low */
          col-gpios
              = <&pro_micro 9  (GPIO_PULL_UP | GPIO_ACTIVE_HIGH)>
              , <&pro_micro 8  (GPIO_PULL_UP | GPIO_ACTIVE_HIGH)>
